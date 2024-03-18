@@ -1,20 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '../src/assets/css/index.css';
+import Router from './routes/BrouserRouter';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <h1 className="text-3xl font-bold underline text-whote">
-      Simple React Typescript Tailwind Sample
-    </h1>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Router/>
+    </BrowserRouter>
+    </>
   );
 }
 
