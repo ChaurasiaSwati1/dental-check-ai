@@ -44,3 +44,10 @@ code {
 .btn-primary:hover{
   background: linear-gradient(90deg, #1a7dce 0%, #20cdfd 100%);
 }
+.footer {
+  transition: transform 0.3s ease; /* Smooth transition */
+  transform: translateY(100%);
+}
+.foot-main:hover  .footer {
+  transform: translateY(0%);
+}
